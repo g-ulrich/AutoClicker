@@ -209,7 +209,6 @@ class Presets:
                     autogui_action(action, xpos, ypos)
                 else:
                     Presets.stop_auto_clicker(self)
-                print("IN?", repeat_val - Presets.REPEAT_VALUE, repeat_val, Presets.REPEAT_VALUE)
                 self.ui.progressBar.setValue(repeat_val - Presets.REPEAT_VALUE)
 
             Presets.event_log(self, click_synonym())
