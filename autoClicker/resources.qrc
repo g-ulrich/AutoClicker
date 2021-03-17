@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>images/mouse2.png</file>
     <file>images/clock3.png</file>
     <file>images/16x16/cil-3d.png</file>
     <file>images/mouse.png</file>

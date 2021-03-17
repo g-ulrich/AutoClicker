@@ -4,13 +4,13 @@ block_cipher = None
 
 
 a = Analysis(['AutoClicker.py'],
-             pathex=['C:\\desktop2\\projects\\pyqt5\\AutoClickerGUI\\autoClicker'],
+             pathex=['C:\\desktop2\\2021\\scripts\\python\\PyCharmProjects\\SuperClickerUtility\\venv\\Lib\\site-packages', 'C:\\desktop2\\2021\\scripts\\python\\PyCharmProjects\\SuperClickerUtility'],
              binaries=[],
-             datas=[],
+             datas=[('images', 'images')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
-             excludes=['tkinter', 'numpy', 'flask', 'eel', 'colorama', 'func_timeout', 'get_all_tickers', 'itsdangerous', 'pandas', 'pyowm', 'PySide2', 'pytweening', 'requests', 'selenium', 'scipy', 'talib', 'tda', 'tda_api', 'tests', 'twilio', 'urllib3'],
+             excludes=['tkinter', 'test', 'sqlite3', 'numpy'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher,
