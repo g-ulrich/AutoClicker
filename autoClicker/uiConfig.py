@@ -138,7 +138,7 @@ class Presets:
         xcoor = self.ui.xcoor.value()
         ycoor = self.ui.ycoor.value()
         total_freq = msecs + (secs * 1000) + (mins * 60000) + (hrs * 3600000)
-
+        Presets.REPEAT_VALUE = 0
         if specify:
             pyautogui.moveTo(xcoor, ycoor)
         Presets.REPEAT_VALUE += repeat_val
@@ -206,10 +206,11 @@ class Presets:
             elif repeat:
                 if 0 != Presets.REPEAT_VALUE:
                     Presets.REPEAT_VALUE -= 1
-                    self.ui.progressBar.setValue(repeat_val - Presets.REPEAT_VALUE)
                     autogui_action(action, xpos, ypos)
                 else:
                     Presets.stop_auto_clicker(self)
+                print("IN?", repeat_val - Presets.REPEAT_VALUE, repeat_val, Presets.REPEAT_VALUE)
+                self.ui.progressBar.setValue(repeat_val - Presets.REPEAT_VALUE)
 
             Presets.event_log(self, click_synonym())
 
